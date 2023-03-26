@@ -1,4 +1,4 @@
-
+const searchCandies = require('../lib/searchCandies')
 
 describe('searchCandoes', () => {
 
@@ -7,7 +7,7 @@ describe('searchCandoes', () => {
   });
 
   it('returns Mars as it starts with Ma and less than price 2', () => {
-    expect(searchCandies('Ma', 10)).toEqual(['Mars'])
+    expect(searchCandies('Ma', 2)).toEqual(['Mars'])
   });
 
   it('returns candies beginning with S and under price 10', () => {
